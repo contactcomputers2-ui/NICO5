@@ -1,0 +1,27 @@
+
+{
+  "compilerOptions": {
+    "lib": ["deno.ns", "deno.window"],
+    "strict": true
+  },
+  "lint": {
+    "rules": {
+      "tags": ["recommended"]
+    }
+  },
+  "fmt": {
+    "files": {
+      "exclude": ["node_modules/", "dist/"]
+    },
+    "options": {
+      "lineWidth": 80,
+      "indentWidth": 2,
+      "singleQuote": true,
+      "proseWrap": "always"
+    }
+  },
+  "imports": {
+    "https://deno.land/std@0.177.0/http/server.ts": "https://deno.land/std@0.177.0/http/server.ts",
+    "npm:@google/genai": "npm:@google/genai@^1.28.0"
+  }
+}
